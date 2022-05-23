@@ -1,0 +1,108 @@
+/*Noto_Serif*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+/*Nanum_Pen_Script*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+/*Noto Sans Korean*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Noto+Serif:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#wrap h1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 5em;
+    position: relative;
+    top: 33%
+}
+
+.thisweek {
+    background: url('../img/Purchase/thisweek.png') center no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.normal {
+    background: url('../img/Purchase/normal.png') center no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.BT1,
+.BT2 {
+    width: 50%;
+    height: 8%;
+    position: relative;
+    top: 45%;
+    left: 25%;
+    color: white;
+    font-size: 1.5em;
+    border: 3px solid white;
+    background-color: transparent;
+}
+
+#black1,
+#black2 {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    background-color: black;
+    opacity: 0.5;
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    #wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thisweek {
+        width: 100%;
+        height: 50%;
+    }
+
+    .normal {
+        width: 100%;
+        height: 50%;
+    }
+
+    #black1 {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        top: 0;
+        background-color: black;
+        opacity: 0.5;
+        display: none;
+    }
+
+    #black2 {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        top: 50%;
+        background-color: black;
+        opacity: 0.5;
+        display: none;
+    }
+}

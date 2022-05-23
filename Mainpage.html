@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainpage</title>
+    <link rel="stylesheet" href="./css/Mainpage.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0b38f475cef29dda375faacd316ed199"></script>
+    <script src = "js/Mainpage/Mainpage_script.js"></script>
+
+</head>
+<body>
+    <div id = 'header'>
+        <div id = 'nav'>
+            <div id = 'main_gnb'>
+                <ul>
+                    <li><a href ='#content_02_page_02'>아뜰리에 마치,봄</a></li>
+                    <li><a href ='#content_03_page_03'>주문안내</a></li>
+                    <li><a href ='#content_04_page_04'>오시는길</a></li>
+                </ul>
+            </div>
+            <div id = 'title'>
+                <p>MarchBom</p>
+                <p>Flower atelier</p>
+                <p>마치,봄</p>
+            </div>
+        </div>
+    </div>
+    <div id = 'content'>
+        <div id = 'content_01'>
+            <div id = 'content_01_page_01'>
+                <p>이주의 꽃</p>
+                <hr>
+                <img src = './img/main/main_1.png' alt='content_page_01_img'>
+            </div>
+            <div id = 'content_02_page_02'>
+                <p>아뜰리에 마치,봄</p>
+                <hr>
+                <div id = 'content_02_page_02_imgbox'>
+                    <div id = 'content_02_page_02_imgbox_01'>
+                        <p>꽃 다발</p>
+                        <img src='./img/main/main_img.png' alt="imgbox_01">
+                    </div>
+                    <div id = 'content_02_page_02_imgbox_02'>
+                        <p>꽃 바구니</p>
+                        <img src='./img/main/main_img.png' alt="imgbox_02">
+                    </div>
+                    <div id = 'content_02_page_02_imgbox_03'>
+                        <p>서프라이즈 박스</p>
+                        <img src='./img/main/main_img.png' alt="imgbox_03">
+                    </div>
+                </div>
+                <div id = 'button'>
+                    <button><a href ='./Purchase.html' >구매하기</a></button>
+                </div>
+            </div>
+            <div id = 'content_03_page_03'>
+                <p>주문안내</p>
+                <hr>
+                <p class = 'text'>*주문 2~3일 전 예약 주시면 원하시는 스타일에 맞게 제작해드립니다 :)</p>
+                <p class = 'text'>*당일 주문시 특정 꽃 선택은 어려우실 수 있으나 시간적 여유를 주시면 매장에 있는 꽃들로 예쁘게 구성해서 준비해드려요.</p>
+                <p class = 'text'>1. 마치,봄 꽃 타입별로 둘러본 후 원하는 타입과 색상 선택하기.</p>
+                <p class = 'text'>2. 수령받을 날짜와 시간 선택 후 결제하기.</p>
+                <p class = 'text'>선택이 어려울 시</p>
+                <p class = 'text'>받으시는 분 연령대 / 성별 / 꽃이 전달되는 용도를 말씀해 주시면 최대한 고려하여 분위기에 잘 어울리는 색 조합과 아름다운 계절 꽃들로 만들어드려요:)</p>
+            </div>
+            <div id = 'content_04_page_04'>
+                <p>오시는길</p>
+                <hr>
+                <div id = 'mapbox'>
+                    <div id = 'openapi_map'></div>
+                    <div id = 'addresstext'>
+                        <div id = 'address'>
+                            <p class = 'address'>대구광역시 동구 율하동 894-1(마치봄)</p>
+                            <p class = 'address'>안일초등학교 앞 정문기준 우측 도로변에 위치하고 있습니다.</p>
+                            <p class = 'address'>도보 이용시 - 율하역 5번 출구 도보3분거리</p>
+                            <p class = 'address'>주차정보</p>
+                            <p class = 'address'>변동사항 - 가게 앞 주차공간있음</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = 'footer'>
+        <div id = 'box'>
+            <div id = 'snsbox'>
+                <a href="#"><img src="./img/main/footer_1.png" alt="kakaotalk"></a>
+                <a href="#"><img src="./img/main/footer_2.png" alt="naverblog"></a>
+                <a href="#"><img src="./img/main/footer_3.png" alt="facebook"></a>
+                <a href="#"><img src="./img/main/footer_4.png" alt="instagram"></a>
+            </div>
+            <div id = 'addressbox'>
+                <p>마치,봄</p>
+                <p>Tel.01030076340</p>
+                <p>대구광역시 동구 율하동 894-1(마치봄)</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

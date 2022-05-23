@@ -1,0 +1,610 @@
+/*Noto_Serif*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+/*Nanum_Pen_Script*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+/*Noto Sans Korean*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Serif:ital@1&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Noto Serif', serif;
+    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* 헤더 네비게이션 */
+#nav {
+    width: 100%;
+    background: url('../img/main/main_header_bg.png') center center no-repeat;
+}
+
+/* 메인지엔비 */
+#main_gnb ul {
+    display: flex;
+}
+
+#main_gnb li {
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.2vmax;
+    font-weight: 600;
+    margin: 2% 4%;
+}
+
+#main_gnb a {
+    color: white;
+}
+
+/* 타이틀 */
+#title {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* MarchBom */
+#title p:nth-child(1) {
+    width: 100%;
+    font-size: 7vmax;
+    font-family: 'Noto Serif', serif;
+    color: white;
+    text-shadow: 0.1rem 0.5rem 0.5rem rgb(171, 175, 185);
+    margin-top: 2%;
+}
+
+/* Flower atelier */
+#title p:nth-child(2) {
+    width: 100%;
+    font-size: 4.5vmax;
+    font-family: 'Noto Serif', serif;
+    color: white;
+    text-shadow: 0.1rem 0.5rem 0.5rem rgb(171, 175, 185);
+    margin-top: -1%;
+}
+
+/* 마치,봄 */
+#title p:nth-child(3) {
+    width: 100%;
+    font-size: 4vmax;
+    color: white;
+    font-family: 'Nanum Pen Script', cursive;
+    text-shadow: 0.1rem 0.4rem 0.4rem rgb(171, 175, 185);
+    margin-bottom: 4%;
+}
+
+
+
+/* 컨텐츠 */
+#content_01 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/* 페이지 01 */
+/* 이주의 꽃 */
+#content_01_page_01 p {
+    color: #DBD2AD;
+    font-size: 2vmax;
+    font-weight: bolder;
+    margin-top: 8%;
+    margin-bottom: 1%;
+}
+
+/* 수평선 */
+#content_01_page_01 hr {
+    border: 2px solid #DBD2AD;
+    margin-bottom: 3%;
+}
+
+/* 인스타그램 이미지 */
+#content_01_page_01 img {
+    width: 100%;
+}
+
+
+
+/* 페이지 02 */
+/* 아뜰리에 마치,봄 */
+#content_02_page_02 p {
+    color: #DBD2AD;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2vmax;
+    font-weight: bolder;
+    margin-top: 8%;
+    margin-bottom: 1%;
+}
+
+/* 수평선 */
+#content_02_page_02 hr {
+    border: 2px solid #DBD2AD;
+    margin-bottom: 3%;
+}
+
+/* 이미지박스 */
+#content_02_page_02_imgbox {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#content_02_page_02_imgbox p {
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.5vmax;
+    font-weight: bolder;
+}
+
+#content_02_page_02_imgbox img {
+    max-width: 100%;
+}
+
+
+/* 스크롤시 카드를 뒤집기 위한 부분~~시작~~ */
+
+
+@keyframes flip {
+    0% {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+.add_keyframe {
+    animation: flip 1s
+}
+
+
+/* 스크롤시 카드를 뒤집기 위한 부분~~끝~~ */
+
+
+
+
+
+
+
+/* 구매하기 버튼 */
+#button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#button button {
+    background-color: white;
+    border: 2px solid #DBD2AD;
+    padding: 0.5% 4%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#button a {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.5vmax;
+    color: #DBD2AD;
+    font-weight: bolder;
+}
+
+
+
+/* 페이지 03 */
+/* 주문안내 */
+#content_03_page_03 p {
+    color: #DBD2AD;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2vmax;
+    font-weight: bolder;
+    margin-top: 8%;
+    margin-bottom: 1%;
+}
+
+/* 수평선 */
+#content_03_page_03 hr {
+    border: 2px solid #DBD2AD;
+    margin-bottom: 3%;
+}
+
+/* 주문안내 - 안내내용 */
+#content_03_page_03 .text {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #959595;
+    font-size: 1.2vmax;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#content_03_page_03 .text:nth-of-type(2) {
+    margin-bottom: 1.4%;
+    font-weight: 580;
+}
+
+#content_03_page_03 .text:nth-of-type(3) {
+    margin-bottom: 1.4%;
+    font-weight: 580;
+}
+
+#content_03_page_03 .text:nth-of-type(4) {
+    color: black;
+    font-size: 1.6vmax;
+}
+
+#content_03_page_03 .text:nth-of-type(5) {
+    color: black;
+    font-size: 1.6vmax;
+    margin-bottom: 1.4%;
+}
+
+#content_03_page_03 .text:nth-of-type(6) {
+    font-weight: 580;
+}
+
+#content_03_page_03 .text:nth-of-type(7) {
+    font-weight: 580;
+}
+
+#content_03_page_03_mobile {
+    display: none;
+}
+
+
+
+/* 페이지 04 */
+/* 오시는길 */
+#content_04_page_04 p {
+    color: #DBD2AD;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2vmax;
+    font-weight: bolder;
+    margin-top: 8%;
+    margin-bottom: 1%;
+}
+
+/* 수평선 */
+#content_04_page_04 hr {
+    border: 2px solid #DBD2AD;
+    margin-bottom: 3%;
+}
+
+/* 지도박스 */
+#mapbox {
+    background: url('../img/main/main_5.jpg') center center no-repeat;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* 오픈api 지도 */
+#openapi_map {
+    width: 50%;
+    margin: 20px 0 20px 20px;
+    border-radius: 10px;
+}
+
+/* 주소 텍스트 */
+#addresstext {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#content_04_page_04 .address {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: black;
+    font-size: 1.2vmax;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#content_04_page_04 .address:nth-of-type(1) {
+    font-size: 1.6vmax;
+    margin-bottom: 1.4%;
+    margin-top: 14%;
+}
+
+#content_04_page_04 .address:nth-of-type(2) {
+    font-weight: 580;
+}
+
+#content_04_page_04 .address:nth-of-type(3) {
+    margin-bottom: 6%;
+    font-weight: 580;
+}
+
+#content_04_page_04 .address:nth-of-type(4) {
+    font-size: 1.6vmax;
+    margin-bottom: 1.4%;
+}
+
+#content_04_page_04 .address:nth-of-type(5) {
+    margin-bottom: 14%;
+    font-weight: 580;
+}
+
+
+
+/* 푸터 */
+#footer {
+    background-color: #393939;
+    margin-top: 4%;
+    padding: 2% 0;
+}
+
+#box {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+/* 마치봄 SNS */
+#snsbox {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#snsbox a {
+    width: 50px;
+    margin: 0 8px;
+    text-align: center;
+}
+
+#snsbox a img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 마치봄 주소 */
+#addressbox {
+    width: 100%;
+}
+
+#addressbox p {
+    color: white;
+    font-size: 1vmax;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* 스크롤시 헤더 부분 고정 관련 CSS ~~시작~~ */
+/* 스크롤시 아래 스타일을 적용한다 */
+.main_class {
+    display: block;
+    background-color: #fff;
+    box-shadow: 1px 1px 20px 1px #A7A7A7;
+    color: #000;
+    position: fixed;
+    width: 100%;
+    height: 6vw;
+}
+
+.main_class_a {
+    color: #DBD2AD !important;
+}
+
+/* 스크롤시 헤더 부분 고정 관련 CSS ~~끝~~ */
+
+
+
+
+@media screen and (max-width:767px) {
+
+    /* 헤더 */
+    /* 네비게이션 사라짐 */
+    #main_gnb {
+        display: none;
+    }
+
+    /* MarchBom */
+    #title p:nth-child(1) {
+        margin-top: 10%;
+    }
+
+    /* 마치,봄 */
+    #title p:nth-child(3) {
+        margin-bottom: 10%;
+    }
+
+
+
+    /* 페이지 01 */
+    /* 이주의 꽃 */
+    #content_01_page_01 p {
+        font-size: 2.4vmax;
+    }
+
+
+
+    /* 페이지 02 */
+    /* 아뜰리에 마치,봄 */
+    #content_02_page_02 p {
+        font-size: 2.4vmax;
+    }
+
+    /* 이미지박스 */
+    #content_02_page_02_imgbox {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #content_02_page_02_imgbox p {
+        font-size: 2.4vmax;
+    }
+
+    /* 버튼 */
+    #button a {
+        font-size: 2.4vmax;
+    }
+
+
+
+
+    /* 페이지 03 */
+    /* 주문안내 */
+    #content_03_page_03 p {
+        font-size: 2.4vmax;
+    }
+
+    /* 주문안내 텍스트 */
+    #content_03_page_03 .text {
+        font-size: 2vmax;
+        font-weight: 580;
+    }
+
+    #content_03_page_03 .text:nth-of-type(2) {
+        margin-bottom: 4%;
+    }
+
+    #content_03_page_03 .text:nth-of-type(3) {
+        margin-bottom: 4%;
+    }
+
+    #content_03_page_03 .text:nth-of-type(4) {
+        font-size: 2.4vmax;
+        margin-bottom: 4%;
+        font-weight: 600;
+    }
+
+    #content_03_page_03 .text:nth-of-type(5) {
+        font-size: 2.4vmax;
+        margin-bottom: 4%;
+        font-weight: 600;
+    }
+
+
+
+
+
+    /* page 04 */
+    /* 오시는길 */
+    #content_04_page_04 p {
+        font-size: 2.4vmax;
+    }
+
+    #mapbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #openapi_map {
+        width: 100%;
+        height: 560px;
+        margin: 20px 20px 0 20px;
+    }
+
+    /* 주소 텍스트 */
+    #addresstext {
+        width: 64%;
+    }
+
+    #content_04_page_04 .address {
+        font-size: 2vmax;
+    }
+
+    #content_04_page_04 .address:nth-of-type(1) {
+        font-size: 2.4vmax;
+        margin-bottom: 4%;
+    }
+
+    #content_04_page_04 .address:nth-of-type(2) {
+        margin-bottom: 4%;
+        font-weight: 580;
+    }
+
+    #content_04_page_04 .address:nth-of-type(3) {
+        margin-bottom: 4%;
+        font-weight: 580;
+    }
+
+    #content_04_page_04 .address:nth-of-type(4) {
+        font-size: 2.4vmax;
+        margin-top: 10%;
+    }
+
+    #content_04_page_04 .address:nth-of-type(5) {
+        font-weight: 580;
+    }
+
+
+
+    /* 마치봄 SNS */
+    #snsbox {
+        margin-top: 6%;
+    }
+
+    #snsbox a {
+        width: 25px;
+        margin: 0 8px;
+        text-align: center;
+    }
+
+
+    /* 마치봄 주소 */
+    #addressbox p {
+        color: white;
+        font-size: 2vmax;
+    }
+
+    #addressbox p:nth-of-type(3) {
+        margin-bottom: 6%;
+    }
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    #nav {
+        background: url('../img/main/landing_bg1_mobile.png') center center no-repeat;
+    }
+}
+
+
+
+/* 카드 뒤집는 효과 ~~시작~~ */
+@keyframes flip {
+    0% {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+.add_keyframe {
+    animation: flip 1s
+}
+
+/* 카드 뒤집는 효과 ~~끝~~ */

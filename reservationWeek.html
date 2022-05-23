@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservationWeek</title>
+    <link rel="stylesheet" href="./css/reservationWeek.css">
+    
+    <!-- 닷홈 주소를 로딩 -->
+    <script src = "./url_define.js"></script>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- 알림톡을 보내기 위한 api 추가 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha256.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+    <script src="js/Landing/solapi.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src = "js/reservation/reservation_week_script.js"></script>
+    
+    
+</head>
+<body>
+    <div id="wrap">
+        <!--헤더-->
+                <header>
+                    <div id="header">
+                        <p>MarchBom</p>
+                        <p>purchase</p>
+                    </div>
+                </header>
+        <!--섹션-->
+                <section>
+                    <div id = 'content'>
+        <!--섹션_왼쪽-->
+                    <div id="left">
+        <!--섹션_왼쪽_예약-->
+                        <div class="ex">
+                            <img src="./img/reservationWeek/reservationWeekflower.png" alt ='flowerImg'>
+                        </div>
+        <!--섹션_왼쪽_유저정보-->
+                        <div class="user">
+                            <form>
+                                <div class="Name">
+                                    <p>Name:</p>
+                                    <input type="text" name="userName" placeholder="이름">
+                                </div>
+                                <div class="Number">
+                                    <p>Number:</p>
+                                    <input type="text" name="userNumber" placeholder="전화번호">
+                                </div>
+                                <div class="Coupon">
+                                    <p>Coupon discount:</p>
+                                    <div id = 'checkbox'>
+                                        <!-- <label for ='discount'>&nbsp;&nbsp;쿠폰 할인 적용하기</label>
+                                        <input type = 'checkbox' id ='discount' > -->
+                                        <div>&nbsp;&nbsp;쿠폰 할인 적용하기</div>
+                                    </div>
+                                </div>
+                                <div class="Type1">
+                                    <p>Type1:</p>
+                                        <div class="label">
+                                            <label for="weekflower">&nbsp;&nbsp;프리지아 / 노란색</label>
+                                        </div>
+                                </div>
+                                <div class="Type2">
+                                    <p>Type2:</p>
+                                    <!-- <select id="selectbox2" title="선택 구분">
+                                        <option selected="selected">&nbsp;&nbsp;타입을 선택해주세요.</option>
+                                        <option>&nbsp;&nbsp;꽃 다발(할인적용)&nbsp;&nbsp;4,500원</option>
+                                        <option>&nbsp;&nbsp;꽃 바구니(할인적용)&nbsp;&nbsp;18,000원</option>
+                                        <option>&nbsp;&nbsp;서프라이즈 박스(할인적용)&nbsp;&nbsp;35,000원</option>
+                                    </select> -->
+
+                                    <!-- 셀렉트 박스 -->
+                                    <div class="select">
+                                        <div class="selected">
+                                            <div class="selected-value">
+                                                <div>&nbsp;&nbsp;원하시는 타입을 선택하세요</div>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li class="option">
+                                                <div>&nbsp;&nbsp;꽃 다발<span>(할인적용)</span></div>
+                                                <div>&nbsp;&nbsp;<span>2,000원</span></div>
+                                                <div>&nbsp;&nbsp;10%</div>
+                                                <div>&nbsp;&nbsp;1,800원</div>
+                                            </li>
+                                            <li class="option">
+                                                <div>&nbsp;&nbsp;꽃 바구니<span>(할인적용)</span></div>
+                                                <div>&nbsp;&nbsp;<span>50,000원</span></div>
+                                                <div>&nbsp;&nbsp;10%</div>
+                                                <div>&nbsp;&nbsp;45,000원</div>
+                                            </li>
+                                            <li class="option">
+                                                <div>&nbsp;&nbsp;서프라이즈 박스<span>(할인적용)</span></div>
+                                                <div>&nbsp;&nbsp;<span>100,000원</span></div>
+                                                <div>&nbsp;&nbsp;10%</div>
+                                                <div>&nbsp;&nbsp;90,000원</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="DateTime">
+                                    <div class="Date">
+                                        <p>Date:</p>
+                                        <!-- <input type='date' name="date"> -->
+                                        <input type="date" id="SelectDate">
+                                    </div>
+                                    <div class="Time">
+                                        <p>time:</p>
+                                        <!-- <input type="time" type="time"> -->
+                                        <input type="text" id="SelectTime">	
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id = 'button'>
+                        <button>구매하기</button>
+                    </div>
+                </section>
+    </div>
+</body>
+</html>

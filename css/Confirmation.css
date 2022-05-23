@@ -1,0 +1,121 @@
+/*Noto_Serif*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+/*Nanum_Pen_Script*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+/*Noto Sans Korean*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Noto+Serif:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#wrap {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/Confirmation/information_img.png') center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.march {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.march p:nth-of-type(1) {
+    font-size: 6vmax;
+    font-family: 'Noto Serif', serif;
+}
+
+.march p:nth-of-type(2) {
+    font-size: 3vmax;
+    font-family: 'Noto Serif', serif;
+}
+
+.info_wrap {
+    background-color: #FFFFFF;
+    width: 60%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 20px;
+}
+
+.info {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.info .img {
+    width: 50%;
+    height: 100%;
+}
+
+.info .img .imgbox {
+    width: 100%;
+    height: 100%;
+}
+
+.info .img .imgbox img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.info .text {
+    width: 50%;
+    height: 100%;
+}
+
+.textbox p {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 1.8em;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+@media screen and (max-width: 767px) {
+    .info_wrap {
+        width: 50%;
+        height: 70%;
+        position: relative;
+    }
+
+    .info {
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        height: 100%;
+    }
+
+    .info .img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .info .text {
+        width: 100%;
+        height: 45%;
+    }
+
+    .textbox p {
+        font-size: 1.5em;
+        margin-left: 0%;
+        margin-top: 1%;
+    }
+}

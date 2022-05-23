@@ -1,0 +1,56 @@
+#page2_imgbox svg {
+    height: 80vh;
+    width: 100%;
+    opacity: 1
+}
+
+#illustration {
+    animation: squigglevision 0.5s infinite alternate;
+}
+
+@keyframes squigglevision {
+    0% {
+        filter: url('#sketch-0');
+    }
+
+    25% {
+        filter: url('#sketch-1');
+    }
+
+    50% {
+        filter: url('#sketch-2');
+    }
+
+    75% {
+        filter: url('#sketch-3');
+    }
+
+    100% {
+        filter: url('#sketch-4');
+    }
+}
+
+#page2_imgbox .path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    /* 스크롤시 아래 애니메이션을 적용한다. */
+    /* animation: paint 1s ease-in-out 1s forwards; */
+}
+
+.add_flower_animation {
+    animation: paint ease-in-out 1s forwards;
+}
+
+#page2_imgbox .path:nth-of-type(2) {
+    animation-delay: 1s;
+}
+
+@keyframes paint {
+    from {
+        stroke-dashoffset: 1;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}

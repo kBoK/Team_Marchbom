@@ -1,0 +1,632 @@
+/*Noto_Serif*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+/*Nanum_Pen_Script*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+/*Noto Sans Korean*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Noto+Serif:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Page1*/
+#page1 {
+    width: 100%;
+    background: url('../img/Landing/page1_bg.png') center center no-repeat;
+    background-size: cover;
+}
+
+/*page1_text*/
+.page1_text {
+    top: 0%;
+    right: 0%;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.page1_text p {
+    color: white;
+}
+
+.page1_text p:nth-of-type(1) {
+    width: 100%;
+    font-size: 7vmax;
+    font-family: 'Noto Serif', serif;
+    color: white;
+    text-shadow: 0.1rem 0.5rem 0.5rem rgb(171, 175, 185);
+    margin-top: 2%;
+}
+
+.page1_text p:nth-of-type(2) {
+    width: 100%;
+    font-size: 4.5vmax;
+    font-family: 'Noto Serif', serif;
+    color: white;
+    text-shadow: 0.1rem 0.5rem 0.5rem rgb(171, 175, 185);
+    margin-top: -1%;
+}
+
+.page1_text p:nth-of-type(3) {
+    width: 100%;
+    font-size: 4vmax;
+    color: white;
+    font-family: 'Nanum Pen Script', cursive;
+    text-shadow: 0.1rem 0.4rem 0.4rem rgb(171, 175, 185);
+    margin-bottom: 4%;
+}
+
+
+/* Page2 */
+#page2 {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+#page_text {
+    text-align: center;
+    padding: 10% 0;
+}
+
+#page_text p {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 5vmax;
+}
+
+/*Page2_box*/
+#page2_box {
+    display: flex;
+    padding: 10% 0;
+}
+
+/*page2_imgbox*/
+#page2 #page2_imgbox {
+    width: 50%;
+    display: flex;
+}
+
+/*Page2_textbox*/
+#page2 #page2_textbox {
+    width: 50%;
+    display: flex;
+    font-family: 'Nanum Pen Script', cursive;
+    text-align: center;
+    font-size: 4vmax;
+}
+
+/* 글자를 가운데 정렬하기 위해 추가 */
+#page2 #page2_textbox div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* 글자 분홍색으로 변경하기 위해 추가 20220511_yhlee */
+/*Page2에서 글자 분홍색 */
+#page2_textbox .mark {
+    color: #FF8181;
+    opacity: 0;
+}
+
+.mark_on {
+    animation: mark_on ease-in-out 1s forwards;
+}
+
+@keyframes mark_on {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* 글자 분홍색으로 변경하기 위해 추가 ~~~끝~~~20220511_yhlee */
+
+
+
+
+/* page3 */
+#page3 {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#page3 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*page3_text*/
+.page3_text {
+    position: absolute;
+    top: 33%;
+    right: 25%;
+}
+
+.page3_text p {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 5vmax;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0.1rem 0.5rem 0.5rem rgb(171, 175, 185);
+}
+
+.page3_text p:last-child {
+    font-size: 3vmax;
+}
+
+
+/* page4 */
+#page4 {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#page4 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*page4_text*/
+.page4_text {
+    position: absolute;
+    top: 25%;
+    /* right: 30%; */
+    left: 30%;
+    z-index: 555;
+}
+
+.page4_text p {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 5vmax;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.black1 {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.7;
+    top: 0;
+}
+
+/* Page5 */
+#page5 {
+    width: 100%;
+    background: url('../img/Landing/page5_bg.png') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+#page5_wrap {
+    width: 80%;
+    justify-content: center;
+    z-index: 555;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    display: flex;
+}
+
+/*page5_text*/
+.page5_text {
+    position: absolute;
+    top: 1%;
+    /* left: 2%; */
+    left: -70%;
+    z-index: 999;
+    display: flex;
+    font-family: 'Noto Serif', serif;
+    color: #FFFFFF;
+}
+
+#page5_pos {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    /* overflow: hidden; */
+}
+
+#page5_alert_block {
+    position: absolute;
+    top: -105vh;
+    left: 0;
+    width: 100%;
+    height: 110vh;
+    display: none;
+    z-index: 9999;
+}
+
+#page5_alert {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 999;
+}
+
+#page5_alert_background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 998;
+}
+
+#page5_alert_wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    width: 50%;
+    max-width: 400px;
+    z-index: 999;
+}
+
+#page5_alert_title {
+    font-family: 'Noto Serif', serif;
+    color: #FFFFFF;
+    font-size: 0.6em;
+    margin-bottom: 5%;
+}
+
+#page5_alert_contents {
+    border-radius: 20px;
+    background-color: white;
+    opacity: 1;
+    color: black;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 0.4em;
+    height: 100%;
+    max-height: 500px;
+}
+
+#page5_alert_contents1 {
+    padding: 1% 0;
+}
+
+#page5_alert_contents_line {
+    background-color: #8F8F8F;
+    height: 2px;
+}
+
+#page5_alert_contents2 {
+    padding: 10% 0;
+}
+
+#page5_alert_contents3 {
+    padding: 2% 0;
+    border-radius: 0 0 20px 20px;
+    background-color: black;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+/* 마지막 스크롤 부분에서 글자 왼쪽에서 오른쪽으로 보여주기 위해 추가 20220511_yhlee */
+.text_right_move {
+    animation: text_move ease-in-out 1s forwards;
+}
+
+@keyframes text_move {
+    from {
+        left: -70%;
+    }
+
+    to {
+        left: 2%;
+    }
+}
+
+/* 마지막 스크롤 부분에서 글자 왼쪽에서 오른쪽으로 보여주기 위해 추가 ~~~끝~~~20220511_yhlee */
+
+
+
+.page5_text p:first-of-type {
+    font-size: 4vmax;
+}
+
+.page5_text p:last-of-type {
+    font-size: 2vmax;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.black2 {
+    background-color: black;
+    width: 100%;
+    height: 12%;
+    position: absolute;
+    opacity: 0.7;
+    top: 0;
+}
+
+/* Page5_inputbox */
+#page5_inputbox {
+    width: 50%;
+}
+
+/* Page5_title */
+#page5_title p {
+    text-align: center;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 4vmax;
+    margin-bottom: 5%;
+}
+
+/* page5_input */
+#page5_input {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#page5_input>form {
+    margin-left: 20%;
+}
+
+#page5_input>form>input {
+    border: none;
+    background-color: #000000;
+    opacity: 0.7;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 3vmax;
+    border-radius: 1rem;
+    margin-bottom: 4%;
+    color: white;
+    padding-left: 20px;
+}
+
+#page5>#page5_inputbox>#page5_input>form>input::placeholder {
+    color: #FFFFFF;
+}
+
+
+
+/* page5_checkbox */
+#page5_checkbox {
+    background-color: #F8F8F8;
+    margin-left: 20%;
+    width: 70%;
+    max-width: 515px;
+    border-radius: 1rem;
+    display: flex;
+    cursor: pointer;
+}
+
+/*
+input[type=checkbox] {
+    background: url('../img/Landing/page5_check.png') center center no-repeat;
+    background-size: 20px 20px;
+    -webkit-appearance: none;
+    padding: 1em;
+    border-radius: 50%;
+}
+
+input[type=checkbox]:checked {
+    background: url('../img/Landing/page5_checked.png') center center no-repeat;
+    background-size: 20px 20px;
+    -webkit-appearance: none;
+    padding: 1em;
+    border-radius: 50%;
+}
+
+#page5_checkbox label {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 2vmax;
+    margin-left: 2%;
+    color: #8F8F8F;
+    margin-top: 3px;
+}
+*/
+
+/* check box새로 추가*/
+#page5_checkbox div:first-child {
+    background: url('../img/Landing/page5_check.png') center center no-repeat;
+    background-size: 70%;
+    -webkit-appearance: none;
+    padding: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#page5_checkbox div:last-child {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 2vmax;
+    margin-left: 2%;
+    color: #8F8F8F;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+/* check box새로 추가 끝*/
+
+
+/* page5_input_button */
+#page5_input_button {
+    background-color: #8F8F8F;
+    border-radius: 1rem;
+    border: none;
+    width: 70%;
+    max-width: 515px;
+    margin-left: 20%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#page5_input_button>p {
+    font-family: 'Nanum Pen Script', cursive;
+    text-align: center;
+    font-size: 3vmax;
+    color: white;
+}
+
+/* Page5_textbox */
+#page5 #page5_textbox {
+    width: 50%;
+}
+
+#page5_textbox p {
+    display: block;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 4vmax;
+    text-align: center;
+}
+
+#page5_textbox p:first-child {
+    margin-top: 13%;
+}
+
+#page5 img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    /* Page1 */
+    .page1_text {
+        top: 13%;
+    }
+
+    /* Page2 */
+    #page2 {
+        position: relative;
+    }
+
+    #page2_box {
+        display: flex;
+        justify-content: center;
+    }
+
+    #page2_imgbox {
+        position: absolute;
+        top: 0;
+    }
+
+    #page_text {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        /* 추가 */
+        padding: 0;
+    }
+
+    #page_text p {
+        margin-bottom: 10%;
+        font-size: 6vmax;
+    }
+
+    #page2_textbox {
+        position: relative;
+        margin-top: 190%;
+        margin-bottom: 10%;
+    }
+
+    #page2_textbox p {
+        font-size: 6vmax;
+    }
+
+    /* Page3 */
+    /*page3_text*/
+    .page3_text {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin-top: 15%;
+    }
+
+
+    /* Page4 */
+    .page4_text {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .page4_text p {
+        font-size: 4.5vmax;
+    }
+
+    /* Page5 */
+    #page5_wrap {
+        width: 100%;
+        z-index: 555;
+        margin-top: 0%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #page5_inputbox {
+        margin: 0 auto;
+    }
+
+    #page5_input form {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    #page5_input form input {
+        width: 100%;
+    }
+
+    #page5_textbox {
+        margin: 0 auto;
+        margin-top: 15%;
+        margin-bottom: 20%;
+    }
+
+    #page5_textbox p {
+        font-size: 5vmax;
+    }
+
+    #page5_checkbox {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    #page5_input_button {
+        width: 100%;
+        margin-left: 0%;
+        cursor: pointer;
+    }
+}
