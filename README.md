@@ -3,7 +3,7 @@
 # 
 
 
-## 주제 🧡
+# 주제 🧡
 
 <br/>
 
@@ -12,7 +12,7 @@ http://kbk83354119.dothome.co.kr/Team_project1/Landing.html
 
 <br/> <br/>
 
-## 기획 💛
+# 기획 💛
 
 <br/>
 
