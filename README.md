@@ -7,7 +7,7 @@
 
 <br/>
 
-동네 꽃집 마치봄
+동네 꽃집 마치봄 **(반응형)**
 http://kbk83354119.dothome.co.kr/Team_project1/Landing.html
 
 <br/> <br/>
