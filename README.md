@@ -1,4 +1,4 @@
-# Marchbom_Tim
+# Marchbom_T
 
 # 
 
@@ -7,7 +7,7 @@
 
 <br/>
 
-동네 꽃집 마치봄 **(반응형)**
+동네 꽃집 마치봄 랜딩페이지로 카카오 알림톡 발송 **(반응형)**
 http://kbk83354119.dothome.co.kr/Team_project1/Landing.html
 
 <br/> <br/>
