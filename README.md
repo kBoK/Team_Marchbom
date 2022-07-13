@@ -74,7 +74,6 @@ https://www.youtube.com/watch?v=5zcKbHnmeCw
 ![슬라이드23](https://user-images.githubusercontent.com/90675820/178667871-53f40c9b-ef54-4bf4-baed-9b80fdf03d3d.JPG)
 ![슬라이드24](https://user-images.githubusercontent.com/90675820/178667876-8c830b18-2cc1-4fe4-8b74-f5ba04378dc2.JPG)
 ![슬라이드25](https://user-images.githubusercontent.com/90675820/178667882-e846806b-7c58-4b91-bb3e-27f61c078f88.JPG)
-![슬라이드26](https://user-images.githubusercontent.com/90675820/178667884-e93d04d3-b96f-41ee-998b-0db8ceaa9b85.JPG)
 ![슬라이드27](https://user-images.githubusercontent.com/90675820/178667886-2e665789-61b4-4f5c-b46f-b14e59dc5a66.JPG)
 ![슬라이드28](https://user-images.githubusercontent.com/90675820/178667889-4615516b-25e3-4c08-8e37-a00bf8b88ea1.JPG)
 ![슬라이드29](https://user-images.githubusercontent.com/90675820/178667891-fe231272-f158-439e-8a66-5e5b88ee2b87.JPG)
